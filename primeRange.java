@@ -1,30 +1,24 @@
 public class primeRange {
    public static void main (String [] args)
     {
-       boolean isPrime;
+      
       
       int num=Integer.parseInt(args[0]);
-       System.out.println("you have entered "+ num);
-       for (int i=2;i<num;i++){
-            isPrime=true;
-           if(num%i==0){
-               isPrime=false;
-               
+      
+      for(int i=2;i<=num;i++){
+          boolean isPrime =true; 
+           for(int j=2 ;j<=i/2;j++){
+               if(i%j==0){
+                  isPrime=false;
+                  break;
+               }
            }
            if(isPrime){
-               
-               System.out.println(i);
+               System.out.print(i+ " ");
            }
-           
+          }
 
-       
-       
-           
-       
-       
-           
-       
-     }
+      }
      }
          
-     }
+     
