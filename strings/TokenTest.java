@@ -9,7 +9,7 @@ public class TokenTest{
 		
 		String[] tokens=sentence.split(" ");
 		
-		System.out.printf("%nnumber of Elements are : %d%n Tokens are %n ",tokens.length);
+		System.out.printf("%nnumber of Elements are : %d%n Tokens are: %n",tokens.length);
 		
 		for(String token: tokens){
 			System.out.println(token);
